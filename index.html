@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hambúrguer de Sucesso - Fature R$15.000/mês com Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .progress-bar {
+            height: 10px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #f97316 87%, #e5e7eb 87%);
+        }
+        .shadow-custom {
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all flex items-center justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-red-600 to-orange-500 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2">🍔 HAMBÚRGUER DE SUCESSO</h1>
+                    <p class="text-xl md:text-2xl">O Segredo para Faturar <span class="font-bold">R$15.000 a R$20.000/mês</span> com Delivery em Casa</p>
+                    <p class="italic">Sem Precisa de Cozinha Profissional!</p>
+                </div>
+                <button class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105">
+                    QUERO MEU LUCRO AGORA!
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Descubra o Método Usado por <span class="text-red-600">327 Empreendedores</span> para Criar um Delivery que Vende Todo Dia</h2>
+                    <p class="text-xl text-gray-700 mb-6">Mesmo Sem Experiência na Cozinha ou em Vendas!</p>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                        <p class="text-lg italic mb-4">"Comprei o ebook e em <span class="font-bold">30 dias</span> meu faturamento foi de <span class="font-bold">R$3.000 → R$18.000</span>. Valeu cada centavo!"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">CA</div>
+                            <div>
+                                <p class="font-bold">Carlos, SP</p>
+                                <p class="text-sm text-gray-600">Aluno desde 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105">
+                        QUERO MEU LUCRO AGORA!
+                    </button>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=999&q=80" alt="Hambúrguer delicioso" class="rounded-lg shadow-xl floating max-w-full h-auto">
+                    <div class="absolute -bottom-4 -left-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded-full shadow-lg">
+                        <span class="text-xl">🔥</span> Mais de 1.000 alunos
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Você está cansado de:</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Trabalhar MUITO e ganhar POUCO?</h3>
+                    <p class="text-gray-700">Dias intermináveis na cozinha para ver apenas migalhas no seu bolso no final do mês.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ver outros faturando alto com delivery enquanto você patina?</h3>
+                    <p class="text-gray-700">Enquanto você se esforça, outros estão colhendo os frutos do conhecimento que você ainda não tem.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Não saber como precificar, vender ou fidelizar clientes?</h3>
+                    <p class="text-gray-700">A dúvida constante sobre quanto cobrar e como transformar clientes em fãs do seu hambúrguer.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-2xl font-bold text-red-600 mb-6">Se você NÃO quer mais passar anos tentando, o momento de agir é HOJE!</p>
+                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105">
+                    QUERO MUDAR MINHA VIDA!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-16 bg-gradient-to-b from-orange-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Imagine:</h2>
+                <div class="w-24 h-2 bg-yellow-400 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-start mb-6">
+                        <div class="bg-yellow-400 rounded-full p-3 mr-4">
+                            <i class="fas fa-mobile-alt text-xl text-black"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Acordar e ver pedidos entrando sozinhos pelo celular?</h3>
+                            <p class="text-gray-700">Seu WhatsApp e Instagram explodindo com pedidos mesmo enquanto você dorme.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="bg-yellow-400 rounded-full p-3 mr-4">
+                            <i class="fas fa-heart text-xl text-black"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Ter clientes viciados no seu hambúrguer?</h3>
+                            <p class="text-gray-700">Pessoas que não conseguem passar uma semana sem pedir seu hambúrguer, te indicando para todos os amigos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="bg-yellow-400 rounded-full p-3 mr-4">
+                            <i class="fas fa-money-bill-wave text-xl text-black"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Ganhar R$500/dia trabalhando em casa, no seu ritmo?</h3>
+                            <p class="text-gray-700">Liberdade para trabalhar quando quiser, sem chefe, sem horário fixo, apenas lucrando.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <p class="text-2xl font-bold text-orange-600 mb-6">Tudo isso é possível – e você pode começar HOJE!</p>
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105">
+                            QUERO ESSA LIBERDADE!
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pessoas felizes com hambúrguer" class="rounded-lg shadow-xl floating max-w-full h-auto">
+                    <div class="absolute -bottom-4 -right-4 bg-black text-white font-bold py-2 px-4 rounded-full shadow-lg">
+                        <span class="text-xl">🚀</span> Método Comprovado
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que você vai encontrar no ebook:</h2>
+                <p class="text-xl text-gray-600">Tudo que você precisa para começar a faturar alto com hambúrguer delivery</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-400 hover:shadow-lg transition-all">
+                    <div class="text-yellow-500 text-3xl mb-4">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Passo a Passo Completo</h3>
+                    <p class="text-gray-700">Desde a compra dos ingredientes até a entrega, com todos os detalhes para você não errar em nada.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-red-400 hover:shadow-lg transition-all">
+                    <div class="text-red-500 text-3xl mb-4">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fórmula de Precificação</h3>
+                    <p class="text-gray-700">Aprenda exatamente como precificar seu hambúrguer para lucrar 3x mais sem perder clientes.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-orange-400 hover:shadow-lg transition-all">
+                    <div class="text-orange-500 text-3xl mb-4">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estratégias de Marketing</h3>
+                    <p class="text-gray-700">Técnicas para lotar seu WhatsApp/Instagram de pedidos mesmo começando do zero.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-green-400 hover:shadow-lg transition-all">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Receitas Exclusivas</h3>
+                    <p class="text-gray-700">Combinações de ingredientes que fazem seu hambúrguer se destacar da concorrência.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-400 hover:shadow-lg transition-all">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fidelização de Clientes</h3>
+                    <p class="text-gray-700">Como transformar clientes em fãs que compram toda semana e te indicam para amigos.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-400 hover:shadow-lg transition-all">
+                    <div class="text-purple-500 text-3xl mb-4">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Logística Perfeita</h3>
+                    <p class="text-gray-700">Como organizar entregas rápidas e manter a qualidade do hambúrguer até chegar ao cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="py-16 bg-gradient-to-r from-red-600 to-orange-500 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Oferta Irresistível</h2>
+                <p class="text-xl">Promoção de Lançamento – Só HOJE!</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white text-gray-800 rounded-xl shadow-2xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8">
+                        <div class="text-center mb-6">
+                            <p class="text-gray-600 line-through text-xl">De: R$697</p>
+                            <p class="text-5xl font-bold text-red-600">R$37</p>
+                            <p class="text-gray-600">ou 12x de R$3,70</p>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">BÔNUS #1: Planilha de Controle Financeiro</p>
+                                    <p class="text-sm text-gray-600">(Valor: R$97)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">BÔNUS #2: Cardápio Matador</p>
+                                    <p class="text-sm text-gray-600">(Valor: R$147)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">BÔNUS #3: Fotos que Vendem</p>
+                                    <p class="text-sm text-gray-600">(Valor: R$97)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-green-100 text-green-800 rounded-full p-2 mr-4">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">BÔNUS #4: Templates de Redes Sociais</p>
+                                    <p class="text-sm text-gray-600">(Valor: R$197)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 text-yellow-800 p-4 rounded-lg mb-6">
+                            <p class="font-bold text-center">TOTAL DE BÔNUS: <span class="text-red-600">R$538 DE GRAÇA!</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-gray-50 p-8">
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold">Vagas disponíveis:</span>
+                                <span class="text-red-600 font-bold">87% preenchidas</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="progress-bar h-2.5 rounded-full"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-50 text-red-800 p-4 rounded-lg mb-6 text-center">
+                            <p class="font-bold">⏳ ÚLTIMAS 20 VAGAS!</p>
+                            <p>Após isso, o preço volta a R$697!</p>
+                        </div>
+                        
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105 mb-6">
+                            SIM! QUERO FATURAR R$15.000/MÊS!
+                        </button>
+                        
+                        <div class="flex items-center justify-center">
+                            <img src="https://www.freepnglogos.com/uploads/visa-and-mastercard-logo-26.png" alt="Cartões de crédito" class="h-8 mr-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-lock text-green-500 mr-2"></i>
+                                <span class="text-sm">Compra 100% Segura</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 bg-green-50 text-green-800 p-4 rounded-lg text-center">
+                            <p class="font-bold">7 Dias de Garantia</p>
+                            <p class="text-sm">Se em 7 dias você não AMAR o ebook, devolvemos cada centavo. Sem perguntas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Lucas Andrews" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-xl">
+                        <div class="absolute -bottom-2 -right-2 bg-yellow-400 text-black font-bold py-2 px-4 rounded-full shadow-lg">
+                            <span class="text-xl">👨‍🍳</span> Expert
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Conheça Lucas Andrews</h2>
+                    <p class="text-xl text-gray-700 mb-6">10 Anos de Experiência em Delivery – Já ajudou mais de 1.000 alunos a transformarem suas vidas com hambúrgueres.</p>
+                    
+                    <div class="mb-6">
+                        <p class="text-gray-700 mb-4">De um pequeno delivery caseiro a uma rede de franquias de hambúrguer, Lucas descobriu a fórmula perfeita para criar um negócio lucrativo com hambúrguer delivery.</p>
+                        <p class="text-gray-700">Agora ele decidiu compartilhar todo seu conhecimento neste ebook completo, para que você possa replicar seu sucesso sem precisar passar pelos mesmos erros que ele cometeu no início.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="italic text-gray-700 mb-4">"Meu objetivo é que você consiga resultados ainda melhores que os meus, em menos tempo e com menos esforço. Por isso criei esse método passo a passo que qualquer pessoa pode seguir."</p>
+                        <p class="font-bold text-right">- Lucas Andrews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Perguntas Frequentes</h2>
+                <p class="text-xl text-gray-600">Tire suas dúvidas sobre o ebook Hambúrguer de Sucesso</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <span class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center mr-3">?</span>
+                        Preciso de cozinha profissional?
+                    </h3>
+                    <p class="text-gray-700 ml-11">NÃO! O método funciona até em cozinhas pequenas. Você vai aprender a otimizar seu espaço e equipamentos para produzir hambúrgueres de alta qualidade mesmo com limitações.</p>
+                </div>
+                
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <span class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center mr-3">?</span>
+                        E se eu não tiver seguidores no Instagram?
+                    </h3>
+                    <p class="text-gray-700 ml-11">Você vai aprender a atrair clientes mesmo do zero! O ebook inclui estratégias comprovadas para ganhar visibilidade e clientes mesmo começando sem nenhum seguidor.</p>
+                </div>
+                
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <span class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center mr-3">?</span>
+                        Como recebo o material?
+                    </h3>
+                    <p class="text-gray-700 ml-11">Na hora, por e-mail! Basta um clique. Você receberá acesso imediato ao ebook em formato PDF e todos os bônus digitais assim que confirmarmos seu pagamento.</p>
+                </div>
+                
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <span class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center mr-3">?</span>
+                        Quanto tempo leva para ver resultados?
+                    </h3>
+                    <p class="text-gray-700 ml-11">Depende do seu empenho, mas muitos alunos começam a ver os primeiros resultados em menos de 30 dias. Alguns conseguem faturar mais de R$10.000 já no segundo mês.</p>
+                </div>
+                
+                <div class="mb-6 pb-6">
+                    <h3 class="text-xl font-bold mb-3 flex items-center">
+                        <span class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center mr-3">?</span>
+                        Posso parcelar no cartão?
+                    </h3>
+                    <p class="text-gray-700 ml-11">Sim! Você pode pagar à vista por boleto ou PIX, ou parcelar em até 12x no cartão de crédito. O valor total é o mesmo em qualquer forma de pagamento.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105">
+                    QUERO MEU HAMBÚRGUER DE SUCESSO!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-black to-gray-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Não deixe essa oportunidade passar!</h2>
+            <p class="text-xl mb-8">Comece hoje mesmo a construir o negócio dos seus sonhos com hambúrguer delivery</p>
+            
+            <div class="max-w-2xl mx-auto bg-white text-gray-800 rounded-xl p-8 shadow-2xl mb-8">
+                <div class="flex justify-between items-center mb-6">
+                    <p class="text-xl font-bold">HAMBÚRGUER DE SUCESSO</p>
+                    <p class="text-3xl font-bold text-red-600">R$37</p>
+                </div>
+                
+                <ul class="text-left mb-6 space-y-2">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        Ebook completo com método passo a passo
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        4 Bônus exclusivos (R$538 de valor)
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        7 Dias de garantia incondicional
+                    </li>
+                </ul>
+                
+                <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-xl pulse shadow-custom transition-all transform hover:scale-105 mb-4">
+                    SIM! QUERO MEU HAMBÚRGUER DE SUCESSO!
+                </button>
+                
+                <div class="flex items-center justify-center">
+                    <img src="https://www.freepnglogos.com/uploads/visa-and-mastercard-logo-26.png" alt="Cartões de crédito" class="h-8 mr-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-lock text-green-500 mr-2"></i>
+                        <span class="text-sm">Compra 100% Segura</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-sm text-gray-400">© 2023 Hambúrguer de Sucesso - Todos os direitos reservados</p>
+        </div>
+    </section>
+
+    <script>
+        // Floating animation for elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add floating class to all elements with floating class
+            const floaters = document.querySelectorAll('.floating');
+            floaters.forEach((floater, index) => {
+                floater.style.animationDelay = `${index * 0.2}s`;
+            });
+            
+            // Add pulse class to all elements with pulse class
+            const pulsers = document.querySelectorAll('.pulse');
+            pulsers.forEach((pulser, index) => {
+                pulser.style.animationDelay = `${index * 0.1}s`;
+            });
+            
+            // Scroll animation
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                });
+            }, {threshold: 0.1});
+            
+            fadeElements.forEach(fadeElement => {
+                appearOnScroll.observe(fadeElement);
+            });
+            
+            // Countdown timer
+            const countdownElement = document.getElementById('countdown');
+            if (countdownElement) {
+                let timeLeft = 30 * 60; // 30 minutes in seconds
+                
+                const timer = setInterval(() => {
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    
+                    countdownElement.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                    
+                    if (timeLeft <= 0) {
+                        clearInterval(timer);
+                        countdownElement.innerHTML = "Oferta expirada!";
+                    } else {
+                        timeLeft--;
+                    }
+                }, 1000);
+            }
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Wilson1177/delivery-house" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
